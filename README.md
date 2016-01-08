@@ -9,7 +9,7 @@ Gabriela Merz, Alexander Fisher, Erez Perelson, and Nathan Press
 How do students without smartphones know when the next shuttle will be? It's a hassle to track the shuttle from your laptop, and shuttle arrival times are erratic. So, we build a giant LED map of the Harvard Quad Shuttle route to (eventually) display in dining halls so students don't have to battle with the app! 
 
 ## Overview 
-For this project, we used: 
+For this project, we used
 1. A Raspberry Pi B
 2. TransLOC's API (how we found out the location of the shuttle and it's arrival times) 
 3. A Seven Segment Display (for displaying the time until the shuttle arrived at the Quad Stop)
