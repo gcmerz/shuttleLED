@@ -12,11 +12,6 @@ How do students without smartphones know when the next shuttle will be? It's a h
 For this project, we used &nbsp;
 1. A Raspberry Pi B &nbsp;
 2. TransLOC's API (how we found out the location of the shuttle and it's arrival times) &nbsp;
-3. A Seven Segment Display (for displaying the time until the shuttle arrived at the Quad Stop) &nbsp;
-4. NeoPixels strips (the lights for the track) &nbsp;
-5. Jeremy Garff's awesome library for integrating NeoPixels and the Pi (found [here](https://github.com/jgarff/rpi_ws281x)) &nbsp;
-6. A 5V power supply and a 74AHCT125 level converter (to safely convert the Pi's GPIO output from 3.3V to 5V, again to be compatible with the NeoPixels) &nbsp;
-7. Laser-cut acryllic (the labels for the stops) &nbsp;
 
 ## What's on the github 
 This github contains the code we had the Pi run. It could definitely be modified to work for different tracks, different bus routes, etc. The file tracker.py contains the majority of the functions -- functions for mapping each LED to a latitude and longitude, functions that parse the data from the API, functions for mapping the shuttles location to an LED, calculating the time to arrival and displaying it on the seven segment display, etc. In minutes.py is the code for writing numbers to the seven segment display. 
