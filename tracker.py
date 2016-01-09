@@ -173,7 +173,6 @@ def make_requests(route, stop):
                 # if it's the best arrival time, store it as such 
                 if arrival_time < arrival_best: 
                     arrival_best = arrival_time 
-        # we have at most two shuttles running at a time, check for the second shuttle
         lst.append((lat, lng))
     return lst, arrival_best
 
@@ -244,6 +243,7 @@ def find_time_difference(tme):
 
 # Main program logic follows:
 if __name__ == '__main__':
+    # setup seven-seg display
     minutes.setup()
     # Create NeoPixel object with appropriate configuration.
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)
